@@ -1,11 +1,11 @@
 {
   "_args": [
     [
-      "ionic-angular-improve@1.0.11",
+      "ionic-angular@1.0.11",
       "/Users/fits/Proj2017012-ProITSM/03.软件源码/APP/Fits_ITWorkOrderMS_App"
     ]
   ],
-  "_from": "ionic-angular-improve@1.0.11",
+  "_from": "ionic-angular@1.0.11",
   "_inBundle": false,
   "_integrity": "sha512-BEZ6magY1i5GwM9ki/MOpszUz62+g518HsGICtw9TE1D4v9Eb6n/o7e+X0vtvpK4TdouFjQ8r5XA9VPAKW9/+Q==",
   "_location": "/ionic-angular-improve",
@@ -46,7 +46,7 @@
   "license": "MIT",
   "main": "umd/index.js",
   "module": "index.js",
-  "name": "ionic-angular-improve",
+  "name": "ionic-angular",
   "peerDependencies": {},
   "repository": {
     "type": "git",

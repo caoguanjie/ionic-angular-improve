@@ -1,0 +1,140 @@
+@import "../../themes/ionic.globals";
+
+// Material Design Popover
+// --------------------------------------------------
+
+/// @prop - Width of the popover content
+// $popover-md-width:                     250px !default;
+
+// /// @prop - Min width of the popover content
+// $popover-md-min-width:                 0 !default;
+
+// /// @prop - Minimum height of the popover content
+// $popover-md-min-height:                0 !default;
+
+// /// @prop - Maximum height of the popover content
+// $popover-md-max-height:                90% !default;
+
+// /// @prop - Border radius of the popover content
+// $popover-md-border-radius:             2px !default;
+
+// /// @prop - Text color of the popover content
+// $popover-md-text-color:                $text-md-color !default;
+
+// /// @prop - Background of the popover content
+// $popover-md-background:                $background-md-color !default;
+
+// /// @prop - Box shadow color of the popover content
+// $popover-md-box-shadow-color:          rgba(0, 0, 0, .3) !default;
+
+// /// @prop - Box shadow of the popover content
+// $popover-md-box-shadow:                0 3px 12px 2px $popover-md-box-shadow-color !default;
+
+
+// .popover-md .popover-content {
+//   @include border-radius($popover-md-border-radius);
+//   @include transform-origin(start, top);
+
+//   width: $popover-md-width;
+//   min-width: $popover-md-min-width;
+//   min-height: $popover-md-min-height;
+//   max-height: $popover-md-max-height;
+
+//   color: $popover-md-text-color;
+//   background: $popover-md-background;
+//   box-shadow: $popover-md-box-shadow;
+// }
+
+// .popover-md .popover-viewport {
+//   opacity: 0;
+//   transition-delay: 100ms;
+// }
+
+
+// md Popover
+// --------------------------------------------------
+
+/// @prop - Width of the popover content
+$popover-md-width:                     200px !default;
+
+/// @prop - Min width of the popover content
+$popover-md-min-width:                 0 !default;
+
+/// @prop - Minimum height of the popover content
+$popover-md-min-height:                0 !default;
+
+/// @prop - Maximum height of the popover content
+$popover-md-max-height:                90% !default;
+
+/// @prop - Border radius of the popover content
+$popover-md-border-radius:             10px !default;
+
+/// @prop - Text color of the popover content
+$popover-md-text-color:                $text-md-color !default;
+
+/// @prop - Background of the popover content
+$popover-md-background:                $background-md-color !default;
+
+/// @prop - Background of the popover arrow
+$popover-md-arrow-background:          $popover-md-background !default;
+
+
+.popover-md .popover-content {
+  @include border-radius($popover-md-border-radius);
+
+  width: $popover-md-width;
+  min-width: $popover-md-min-width;
+  min-height: $popover-md-min-height;
+  max-height: $popover-md-max-height;
+
+  color: $popover-md-text-color;
+  background: $popover-md-background;
+}
+
+
+// Popover Arrow
+// -----------------------------------------
+
+.popover-md .popover-arrow {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  width: 20px;
+  height: 10px;
+}
+
+.popover-md .popover-arrow::after {
+  @include position(3px, null, null, 3px);
+  @include border-radius(3px);
+  position: absolute;
+  z-index: $z-index-overlay-wrapper;
+  width: 14px;
+  height: 14px;
+  background-color: $popover-md-arrow-background;
+  content: "";
+  transform: rotate(45deg);
+}
+
+.popover-md.popover-bottom .popover-arrow {
+  top: auto;
+  bottom: -10px;
+}
+
+.popover-md.popover-bottom .popover-arrow::after {
+  top: -6px;
+}
+
+.popover-md {
+
+  .item-md {
+    @include padding-horizontal($item-md-padding-start, null);
+
+  }
+
+  .item-md[detail-push] .item-inner,
+  button.item-md:not([detail-none]) .item-inner,
+  a.item-md:not([detail-none]) .item-inner {
+    @include background-position(end, $item-md-padding-end - 2, center);
+
+  }
+}

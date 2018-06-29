@@ -1,11 +1,11 @@
 {
   "_args": [
     [
-      "ionic-angular-improve@1.0.10",
+      "ionic-angular-improve@1.0.11",
       "/Users/fits/Proj2017012-ProITSM/03.软件源码/APP/Fits_ITWorkOrderMS_App"
     ]
   ],
-  "_from": "ionic-angular-improve@1.0.10",
+  "_from": "ionic-angular-improve@1.0.11",
   "_inBundle": false,
   "_integrity": "sha512-BEZ6magY1i5GwM9ki/MOpszUz62+g518HsGICtw9TE1D4v9Eb6n/o7e+X0vtvpK4TdouFjQ8r5XA9VPAKW9/+Q==",
   "_location": "/ionic-angular-improve",
@@ -13,18 +13,18 @@
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "ionic-angular-improve@1.0.10",
+    "raw": "ionic-angular-improve@1.0.11",
     "name": "ionic-angular-improve",
     "escapedName": "ionic-angular-improve",
-    "rawSpec": "1.0.10",
+    "rawSpec": "1.0.11",
     "saveSpec": null,
-    "fetchSpec": "1.0.10"
+    "fetchSpec": "1.0.11"
   },
   "_requiredBy": [
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/ionic-angular/-/ionic-angular-3.9.2.tgz",
-  "_spec": "1.0.10",
+  "_spec": "1.0.11",
   "_where": "/Users/fits/Proj2017012-ProITSM/03.软件源码/APP/Fits_ITWorkOrderMS_App",
   "bugs": {
     "url": "https://github.com/ionic-team/ionichttps://github.com/caoguanjie/ionic-angular-improve/issues"
@@ -52,7 +52,7 @@
     "type": "git",
     "url": "git+https://github.com/caoguanjie/ionic-angular-improve.git"
   },
-  "version": "1.0.10",
+  "version": "1.0.11",
   "scripts": {
     "test": "make test"
   },
